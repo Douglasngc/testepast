@@ -2,13 +2,14 @@
 interface ContentProps {
     title: string;
   }
+import TableNames from "@/app/Components/tablenames";
   import { Pagination } from "./Pagination";
-  import { EditIcon } from "@/app/Dashboard/Main/icons/EditIcon";
-  import { TrashIcon } from "@/app/Dashboard/Main/icons/TrashIcon";
+ 
   
   export function Content(_props: ContentProps) {
-    return (<div>
-      <div className="h-16 w-94 bg-zinc-200 text-4xl text-orange-500 rounded-t-3xl pl-4  flex space-x-0 items-center">
+    return (
+    <div>
+      <div className="h-12 w-full bg-zinc-200 border-b text-4xl text-orange-500 rounded-t-3xl pl-4  flex space-x-0 items-center">
         <h2>Empresas</h2>  
         <div className="pt-1">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" fill="rgb(255,120,0)"viewBox="0 0 24 24">
@@ -16,257 +17,49 @@ interface ContentProps {
           </svg>
           </div>
       </div>
-      <div className="mt-2">
-         
-        <div className="container mt-10 ">
-  
-       
-          <div className="py-0">
-          
-            <div className=" mb-10">
+
            
-              <div className="max-w-full overflow-x-auto rounded-lg">
                 
-                <table className="w-full leading-normal text-black">
-                  <thead>
+                <table className="  border-b border w-full ">
+                  <thead >
                     <tr>
-  
+
                       <th
-                        scope="col"
-                        className="border-b border-gray-200 px-5 py-3 text-left text-sm font-normal uppercase"
+                        
+                        className="border-b p-3  text-left text-sm font-normal uppercase"
                       >
                         Empresas
                       </th>
                       <th
-                        scope="col"
-                        className="border-b border-gray-200 px-5 py-3 text-left text-sm font-normal uppercase"
+                        
+                        className="border-b  p-3 text-left text-sm font-normal uppercase"
                       >
                         Código Externo
                       </th>
                       <th
-                        scope="col"
-                        className="border-b border-gray-200 px-5 py-3 text-left text-sm font-normal uppercase"
+                        
+                        className=" border-b p-3   text-left text-sm font-normal uppercase"
                       >
                        Ações
                       </th>
-                      <th
-                        scope="col"
-                        className="border-b border-gray-200 px-5 py-3 text-left text-sm font-normal uppercase"
+                      <th                        
+                        className=" w-2 p-3     "
                       />
                     </tr>
                   </thead>
-                  <tbody className="text-black">
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Jean marc</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">Admin</p>
-                      </td>
-  
-  
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Marcus coco</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">Designer</p>
-                      </td>
-  
-  
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Eric marc</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">Developer</p>
-                      </td>
-  
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Julien Huger</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">User</p>
-                      </td>
-  
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Jean marc</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">Admin</p>
-                      </td>
-  
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Marcus coco</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">Designer</p>
-                      </td>
-  
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Eric marc</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">Developer</p>
-                      </td>
-  
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <div className="flex items-center">
-                          <div className="shrink-0">
-  
-                          </div>
-                          <div className="ml-0">
-                            <p className="whitespace-nowrap">Julien Huger</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <p className="whitespace-nowrap">User</p>
-                      </td>
-                      
-                      <td className="border-b border-gray-200 p-5 text-sm">
-                        <a
-                          href="#"
-                          className="flex space-x-0 text-indigo-600 hover:text-indigo-900"
-                        >
-                          <EditIcon />
-                          <TrashIcon /> 
-                        </a>
-                      </td>
-                    </tr>
+                  <tbody className="w-full  text-black">
+                    <TableNames   />
+                  
+                    
                   </tbody>
+                 
                 </table>
-               <Pagination />
+                <Pagination />    
+              
               </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
+           
+         
+     
     );
   }
   
